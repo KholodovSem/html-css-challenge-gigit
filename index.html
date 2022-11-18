@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+
+    <title>Gigit</title>
+  </head>
+  <body>
+    <div class="container container--center">
+      <!-- Navigation panel -->
+      <div class="navigation">
+        <nav class="navigation__nav">
+          <div class="navigation__icon-box">
+            <a href="#" class="navigation__btn navigation__btn--first">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#account"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#calendar"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#music"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#star"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#chat"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#document"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="navigation__icon-box">
+            <a href="#" class="navigation__btn">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#notification"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#user"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn navigation__btn--last">
+              <svg class="navigation__icon">
+                <use href="./img/svg/sprite.svg#logout"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <main class="container">
+        <div class="main-content container container--column">
+          <!-- Header -->
+          <header class="header">
+            <h1 class="main-heading">Browse</h1>
+            <form class="form">
+              <label class="form__label">
+                <svg class="form__icon">
+                  <use href="./img/svg/sprite.svg#magnifier"></use>
+                </svg>
+                <input type="text" class="input" />
+              </label>
+              <label class="form__label">
+                <svg class="form__icon">
+                  <use href="./img/svg/sprite.svg#filters"></use>
+                </svg>
+                <input type="text" class="input" />
+              </label>
+            </form>
+          </header>
+
+          <!-- New artists -->
+          <section class="new-artists">New Artists</section>
+
+          <!-- Popular -->
+          <section class="popular">Popular</section>
+        </div>
+
+        <!-- Favorits -->
+        <aside class="favorits">Favorits</aside>
+      </main>
+    </div>
+  </body>
+</html>

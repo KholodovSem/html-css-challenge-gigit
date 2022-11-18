@@ -1,0 +1,29 @@
+{
+  "name": "Gigit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "compile:sass": "sass --watch sass/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KholodovSem/AdvancedCSS-Sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KholodovSem/HTML-CSS-Challenge-Gigit/issues"
+  },
+  "homepage": "https://github.com/KholodovSem/HTML-CSS-Challenge-Gigit",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
