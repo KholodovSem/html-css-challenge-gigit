@@ -10,12 +10,6 @@
   box-sizing: inherit;
 }
 
-/* 
-  Переход на отноcительные еденицы измерения.
-  Для простоты подсчёта значений, нам нужно установить дефолтное значение размера шрифта
-  равным 10px.
-  Чтобы в будущем нам было проще использовать rem.  
-*/
 html {
   font-size: 62.5%; // 1rem = 10px
   box-sizing: border-box;
@@ -28,4 +22,8 @@ body {
   font-weight: 400;
   line-height: 1;
   overflow-x: hidden;
+}
+
+main {
+  padding-left: 6%;
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* 
    !Default setup
 */
@@ -10,12 +9,6 @@
   box-sizing: inherit;
 }
 
-/* 
-  Переход на отноcительные еденицы измерения.
-  Для простоты подсчёта значений, нам нужно установить дефолтное значение размера шрифта
-  равным 10px.
-  Чтобы в будущем нам было проще использовать rem.  
-*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -30,9 +23,10 @@ body {
   overflow-x: hidden;
 }
 
-/* 
-  Animations
-*/
+main {
+  padding-left: 6%;
+}
+
 .main-heading {
   font-size: 3.2rem;
   font-weight: 500;
@@ -72,12 +66,7 @@ body {
   display: flex;
   max-width: 144rem;
   width: 100%;
-}
-.container--center {
   margin: 0 auto;
-}
-.container--column {
-  flex-direction: column;
 }
 
 .margin-bottom-small {
@@ -85,7 +74,7 @@ body {
 }
 
 .margin-bottom-medium {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.6rem !important;
 }
 
 .margin-bottom-large {
@@ -104,38 +93,8 @@ body {
   padding-top: 5.6rem;
 }
 
-.grid {
-  display: grid;
-}
-.grid--large-gap {
-  gap: 5.8rem;
-}
-.grid--medium-gap {
-  gap: 2rem;
-}
-.grid--one-column {
-  grid-template-columns: 1fr;
-}
-.grid--two-column {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid--three-column {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid--four-column {
-  grid-template-columns: repeat(4, 1fr);
-}
-.grid--five-column {
-  grid-template-columns: repeat(5, 1fr);
-}
-.grid--six-column {
-  grid-template-columns: repeat(6, 1fr);
-}
-.grid--seven-column {
-  grid-template-columns: repeat(7, 1fr);
-}
-.grid--eight-column {
-  grid-template-columns: repeat(8, 1fr);
+.border-bottom {
+  border-bottom: 1px solid #dbdfe4;
 }
 
 .search_panel {
@@ -167,35 +126,6 @@ body {
   transform: translate(0, -50%);
   width: 2rem;
   height: 2rem;
-}
-
-.box {
-  display: flex;
-  width: 100%;
-}
-.box--gap-medium {
-  gap: 2.4rem;
-}
-.box--column {
-  flex-direction: column;
-}
-.box--baseline-align {
-  align-items: baseline;
-}
-.box--vertical-align {
-  align-items: center;
-}
-.box--padding-top {
-  padding-top: 3.2rem;
-}
-.box--padding-bottom-header {
-  padding-bottom: 2.4rem;
-}
-.box--padding-bottom-favorit {
-  padding-bottom: 2.6rem;
-}
-.box--border-bottom {
-  border-bottom: 1px solid #dbdfe4;
 }
 
 .group-box {
@@ -243,10 +173,16 @@ body {
   align-items: center;
   padding-top: 2.4rem;
 }
-.header__image-box {
+.header__box--padding {
+  padding-bottom: 2.2rem;
+}
+.header__box--images {
+  flex: 0 0 40%;
   display: flex;
   align-items: center;
-  margin-right: 6.8rem;
+}
+.header__box--text {
+  flex: 0 0 60%;
 }
 .header__image {
   width: 100%;
@@ -260,16 +196,18 @@ body {
   margin-right: -6.4rem;
 }
 .header__image--third {
-  min-width: 19.6rem;
+  max-width: 19.6rem;
   border-radius: 5px;
 }
 
 .navigation {
+  position: fixed;
   flex: 0 0 6%;
-  padding: 3.2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  padding: 3.2rem 2rem;
   background-color: #12141d;
 }
 .navigation__nav {
@@ -339,7 +277,61 @@ body {
 
 .main-content {
   flex: 0 0 75%;
-  padding: 0 4.4rem;
+  padding: 0 4.4rem 2.8rem 4.4rem;
+}
+
+.grid {
+  display: grid;
+}
+.grid--large-gap {
+  gap: 5.8rem;
+}
+.grid--medium-gap {
+  gap: 2rem;
+}
+.grid--one-column {
+  grid-template-columns: 1fr;
+}
+.grid--two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--five-column {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--six-column {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid--seven-column {
+  grid-template-columns: repeat(7, 1fr);
+}
+.grid--eight-column {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.box {
+  display: flex;
+  width: 100%;
+}
+.box--gap-medium {
+  gap: 2.4rem;
+}
+.box--column {
+  flex-direction: column;
+}
+.box--baseline-align {
+  align-items: baseline;
+}
+.box--vertical-align {
+  align-items: center;
+}
+.box--padding-top {
+  padding-top: 3.2rem;
 }
 
 .favorits {
@@ -348,6 +340,9 @@ body {
   flex-direction: column;
   padding: 4rem 3.2rem 0;
   background-color: #f7f8f9;
+}
+.favorits__box--pading {
+  padding-bottom: 2.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

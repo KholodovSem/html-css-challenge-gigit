@@ -4,10 +4,18 @@
   align-items: center;
   padding-top: 2.4rem;
 
-  &__image-box {
+  &__box--padding {
+    padding-bottom: 2.2rem;
+  }
+
+  &__box--images {
+    flex: 0 0 40%;
     display: flex;
     align-items: center;
-    margin-right: 6.8rem;
+  }
+
+  &__box--text {
+    flex: 0 0 60%;
   }
 
   &__image {
@@ -22,7 +30,7 @@
       margin-right: -6.4rem;
     }
     &--third {
-      min-width: 19.6rem;
+      max-width: 19.6rem;
       border-radius: 5px;
     }
   }
