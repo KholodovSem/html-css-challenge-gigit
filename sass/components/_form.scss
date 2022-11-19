@@ -1,0 +1,36 @@
+.search_panel {
+  color: $color-grey-3;
+
+  &__label {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__input {
+    padding: 1.3rem 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.47;
+    color: inherit;
+    border: 1px solid $color-grey-1;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: inherit;
+      font-weight: 500;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translate(0, -50%);
+
+    width: 2rem;
+    height: 2rem;
+  }
+}

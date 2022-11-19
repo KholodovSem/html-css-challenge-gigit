@@ -29,7 +29,7 @@
                 <use href="./img/svg/sprite.svg#calendar"></use>
               </svg>
             </a>
-            <a href="#" class="navigation__btn">
+            <a href="#" class="navigation__btn navigation__btn--active">
               <svg class="navigation__icon">
                 <use href="./img/svg/sprite.svg#music"></use>
               </svg>
@@ -73,32 +73,371 @@
         <div class="main-content container container--column">
           <!-- Header -->
           <header class="header">
-            <h1 class="main-heading">Browse</h1>
-            <form class="form">
-              <label class="form__label">
-                <svg class="form__icon">
-                  <use href="./img/svg/sprite.svg#magnifier"></use>
-                </svg>
-                <input type="text" class="input" />
-              </label>
-              <label class="form__label">
-                <svg class="form__icon">
-                  <use href="./img/svg/sprite.svg#filters"></use>
-                </svg>
-                <input type="text" class="input" />
-              </label>
-            </form>
+            <div
+              class="box box--padding-bottom-header box--border-bottom box--vertical-align"
+            >
+              <h1 class="main-heading">Browse</h1>
+              <form class="search_panel margin-left-auto">
+                <label class="search_panel__label">
+                  <svg class="search_panel__icon">
+                    <use href="./img/svg/sprite.svg#magnifier"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    class="search_panel__input"
+                    placeholder="Search"
+                  />
+                </label>
+                <label class="search_panel__label">
+                  <svg class="search_panel__icon">
+                    <use href="./img/svg/sprite.svg#filters"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    class="search_panel__input"
+                    placeholder="View Filters"
+                  />
+                </label>
+              </form>
+            </div>
+            <div class="box box--padding-top box--vertical-align">
+              <div class="header__image-box">
+                <img
+                  srcset="
+                    ./img/header-image-1-1x.png 1x,
+                    ./img/header-image-1-2x.png 2x
+                  "
+                  src="./img/header-image-1-2x.png"
+                  alt="Music group"
+                  class="header__image header__image--first"
+                />
+                <img
+                  srcset="
+                    ./img/header-image-2-1x.png 1x,
+                    ./img/header-image-2-2x.png 2x
+                  "
+                  src="./img/header-image-2-2x.png"
+                  alt="Music group"
+                  class="header__image header__image--second"
+                />
+                <img
+                  srcset="
+                    ./img/header-image-3-1x.jpg 1x,
+                    ./img/header-image-3-2x.jpg 2x
+                  "
+                  src="./img/header-image-3-2x.jpg"
+                  alt="Music group"
+                  class="header__image header__image--third"
+                />
+              </div>
+              <div class="header__text-box">
+                <h2 class="heading-secondary margin-bottom-medium">
+                  <span>More than 100+ musical groups</span>
+                  <span>are ready to perform in your venue</span>
+                </h2>
+                <p class="text">
+                  Use trial access to evaluate the benefits of our service
+                </p>
+              </div>
+            </div>
           </header>
 
           <!-- New artists -->
-          <section class="new-artists">New Artists</section>
+          <section class="section new-artists">
+            <h2 class="heading-secondary margin-bottom-large">New Artists</h2>
+            <div class="grid grid--large-gap grid--eight-column">
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-1.jpg 1x, ./img/image-1-2x.jpg 2x"
+                  src="./img/image-1-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Linkin Park
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Alternative
+                </p>
+              </div>
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-2.jpg 1x, ./img/image-2-2x.jpg 2x"
+                  src="./img/image-2-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Nirvana
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Grunge
+                </p>
+              </div>
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-3.png 1x, ./img/image-3-2x.png 2x"
+                  src="./img/image-3-2x.png"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom group-box__image--grey-background"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Limp Bizkit
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Nu metal
+                </p>
+              </div>
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-4.jpg 1x, ./img/image-4-2x.jpg 2x"
+                  src="./img/image-4-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Bi-2
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Rock
+                </p>
+              </div>
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-5.png 1x, ./img/image-5-2x.png 2x"
+                  src="./img/image-5-2x.png"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  The Who
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Rock
+                </p>
+              </div>
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-6.jpg 1x, ./img/image-6-2x.jpg 2x"
+                  src="./img/image-6-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Staind
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Alternative
+                </p>
+              </div>
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-7.jpg 1x, ./img/image-7-2x.jpg 2x"
+                  src="./img/image-7-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Scorpions
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Hard Rock
+                </p>
+              </div>
+              <div class="group-box group-box--column group-box--center-align">
+                <img
+                  srcset="./img/image-8.jpg 1x, ./img/image-8-2x.jpg 2x"
+                  src="./img/image-8-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--medium-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Queen
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Rock
+                </p>
+              </div>
+            </div>
+          </section>
 
           <!-- Popular -->
-          <section class="popular">Popular</section>
+          <section class="section popular">
+            <h2 class="heading-secondary margin-bottom-large">Popular</h2>
+            <div class="grid grid--medium-gap grid--three-column">
+              <div class="group-box group-box--column">
+                <img
+                  srcset="./img/popular-1.jpg 1x, ./img/popular-1-2x.jpg 2x"
+                  src="./img/popular-1-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--large-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-size-large text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Linkin Park
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Alternative
+                </p>
+              </div>
+              <div class="group-box group-box--column">
+                <img
+                  srcset="./img/popular-2.jpg 1x, ./img/popular-2-2x.jpg 2x"
+                  src="./img/popular-2-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--large-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-size-large text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Nirvana
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Grunge
+                </p>
+              </div>
+              <div class="group-box group-box--column">
+                <img
+                  srcset="./img/popular-3.jpg 1x, ./img/popular-3-2x.jpg 2x"
+                  src="./img/popular-3-2x.jpg"
+                  alt="Group logo"
+                  class="group-box__image group-box__image--large-box group-box__image--margin-bottom"
+                />
+                <p
+                  class="text text--font-size-large text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Limp Bizkit
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Nu metal
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
 
         <!-- Favorits -->
-        <aside class="favorits">Favorits</aside>
+        <section class="section favorits">
+          <div
+            class="box box--padding-bottom-favorit box--border-bottom box--baseline-align"
+          >
+            <h2 class="heading-secondary">Favorite Artists</h2>
+            <button
+              class="btn btn--inline text text--color-grey-2 margin-left-auto"
+            >
+              View All
+            </button>
+          </div>
+          <div class="box box--padding-top box--column box--gap-medium">
+            <div class="group-box group-box--center-align">
+              <img
+                srcset="./img/image-1.jpg 1x, ./img/image-1-2x.jpg 2x"
+                src="./img/image-1-2x.jpg"
+                alt="Group logo"
+                class="group-box__image group-box__image--small-box group-box__image--margin-right"
+              />
+              <div class="box box--column">
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Linkin Park
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Alternative
+                </p>
+              </div>
+            </div>
+            <div class="group-box group-box--center-align">
+              <img
+                srcset="./img/image-2.jpg 1x, ./img/image-2-2x.jpg 2x"
+                src="./img/image-2-2x.jpg"
+                alt="Group logo"
+                class="group-box__image group-box__image--small-box group-box__image--margin-right"
+              />
+              <div class="box box--column">
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Nirvana
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Grunge
+                </p>
+              </div>
+            </div>
+            <div class="group-box group-box--center-align">
+              <img
+                srcset="./img/image-3.png 1x, ./img/image-3-2x.png 2x"
+                src="./img/image-3-2x.png"
+                alt="Group logo"
+                class="group-box__image group-box__image--small-box group-box__image--margin-right group-box__image--grey-background"
+              />
+              <div class="box box--column">
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Limp Bizkit
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Nu metal
+                </p>
+              </div>
+            </div>
+            <div class="group-box group-box--center-align">
+              <img
+                srcset="./img/image-4.jpg 1x, ./img/image-4-2x.jpg 2x"
+                src="./img/image-4-2x.jpg"
+                alt="Group logo"
+                class="group-box__image group-box__image--small-box group-box__image--margin-right"
+              />
+              <div class="box box--column">
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  Bi-2
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Rock
+                </p>
+              </div>
+            </div>
+            <div class="group-box group-box--center-align">
+              <img
+                srcset="./img/image-5.png 1x, ./img/image-5-2x.png 2x"
+                src="./img/image-5-2x.png"
+                alt="Group logo"
+                class="group-box__image group-box__image--small-box group-box__image--margin-right"
+              />
+              <div class="box box--column">
+                <p
+                  class="text text--font-weight-medium text--no-wrap margin-bottom-small"
+                >
+                  The Who
+                </p>
+                <p class="text text--font-size-small text--color-grey-2">
+                  Rock
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>
