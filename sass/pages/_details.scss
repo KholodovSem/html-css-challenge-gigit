@@ -1,0 +1,43 @@
+.details-page.header {
+  &__box--relative {
+    position: relative;
+  }
+
+  &__box--padding {
+    padding-bottom: 2.8rem;
+  }
+
+  &__btn {
+    margin-right: 1.4rem;
+  }
+
+  &__image {
+    &--second {
+      position: absolute;
+      bottom: -3rem;
+      left: 5rem;
+
+      max-width: 16rem;
+    }
+  }
+}
+
+.details-page.gallery {
+  margin-left: 8rem;
+}
+
+.details-page.about {
+  // &__box {
+  //   max-width: 80rem;
+  // }
+
+  // &__text {
+  //   max-width: 80rem;
+  // }
+}
+
+.about {
+}
+
+.details {
+}

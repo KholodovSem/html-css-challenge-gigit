@@ -27,7 +27,6 @@
       border: 1.5px solid $color-grey-dark;
       border-radius: 50%;
       color: $color-grey-3;
-      background-color: transparent;
       transition: all 200ms;
       cursor: pointer;
     }
@@ -81,12 +80,5 @@
         background-color: $color-grey-dark;
       }
     }
-  }
-
-  &__icon {
-    fill: currentColor;
-
-    width: 1.6rem;
-    height: 1.6rem;
   }
 }

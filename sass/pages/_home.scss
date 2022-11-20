@@ -1,3 +1,39 @@
+.home-page.header {
+  &__box--padding {
+    padding-bottom: 2.2rem;
+  }
+
+  &__box--images {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__box--text {
+    flex: 0 0 60%;
+  }
+
+  &__image {
+    &--first {
+      max-width: 9.6rem;
+      margin-right: -6.4rem;
+    }
+    &--second {
+      max-width: 12rem;
+      margin-right: -6.4rem;
+    }
+    &--third {
+      max-width: 19.6rem;
+    }
+  }
+}
+
+.home-page {
+  &__main-content {
+    padding: 0 4.4rem 2.8rem 4.4rem;
+  }
+}
+
 .favorits {
   flex: 0 0 25%;
   display: flex;

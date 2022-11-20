@@ -1,0 +1,8 @@
+.gallery {
+  &__img {
+    max-width: 4rem;
+    padding: 2px;
+    background-image: linear-gradient(#de0046, #f7a34b);
+    border-radius: 50%;
+  }
+}

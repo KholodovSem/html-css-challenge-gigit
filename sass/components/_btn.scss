@@ -1,7 +1,23 @@
 .btn {
-  &--inline {
-    background-color: transparent;
-    border: none;
+  display: inline-block;
+
+  &:link,
+  :visited {
+    color: inherit;
+    text-decoration: none;
     cursor: pointer;
+  }
+
+  &--primary {
+    padding: 1.3rem 10.3rem;
+    border-radius: 6px;
+    background-color: $color-main-coral;
+  }
+
+  &--color-white {
+    color: #fff !important;
+  }
+  &--color-grey {
+    color: $color-grey-3 !important;
   }
 }

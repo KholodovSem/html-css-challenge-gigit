@@ -4,34 +4,8 @@
   align-items: center;
   padding-top: 2.4rem;
 
-  &__box--padding {
-    padding-bottom: 2.2rem;
-  }
-
-  &__box--images {
-    flex: 0 0 40%;
-    display: flex;
-    align-items: center;
-  }
-
-  &__box--text {
-    flex: 0 0 60%;
-  }
-
   &__image {
     width: 100%;
-
-    &--first {
-      max-width: 9.6rem;
-      margin-right: -6.4rem;
-    }
-    &--second {
-      max-width: 12rem;
-      margin-right: -6.4rem;
-    }
-    &--third {
-      max-width: 19.6rem;
-      border-radius: 5px;
-    }
+    border-radius: 5px;
   }
 }

@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" />
 
     <title>Gigit</title>
   </head>
@@ -20,61 +20,61 @@
         <nav class="navigation__nav">
           <div class="navigation__icon-box">
             <a href="#" class="navigation__btn navigation__btn--first">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#account"></use>
               </svg>
             </a>
             <a href="#" class="navigation__btn">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#calendar"></use>
               </svg>
             </a>
             <a href="#" class="navigation__btn navigation__btn--active">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#music"></use>
               </svg>
             </a>
             <a href="#" class="navigation__btn">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#star"></use>
               </svg>
             </a>
             <a href="#" class="navigation__btn">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#chat"></use>
               </svg>
             </a>
             <a href="#" class="navigation__btn">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#document"></use>
               </svg>
             </a>
           </div>
           <div class="navigation__icon-box">
             <a href="#" class="navigation__btn">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#notification"></use>
               </svg>
             </a>
             <a href="#" class="navigation__btn">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#user"></use>
               </svg>
             </a>
             <a href="#" class="navigation__btn navigation__btn--last">
-              <svg class="navigation__icon">
+              <svg class="icon">
                 <use href="./img/svg/sprite.svg#logout"></use>
               </svg>
             </a>
           </div>
         </nav>
       </div>
-      <main class="main box">
-        <div class="main-content box box--column">
+      <main class="box">
+        <div class="main-content home-page__main-content box box--column">
           <!-- Header -->
-          <header class="header">
+          <header class="home-page header">
             <div
-              class="box header__box--padding box--vertical-align border-bottom"
+              class="box home-page header__box--padding box--vertical-align border-bottom"
             >
               <h1 class="main-heading">Browse</h1>
               <form class="search_panel margin-left-auto">
@@ -101,7 +101,9 @@
               </form>
             </div>
             <div class="box box--padding-top box--vertical-align">
-              <div class="header__box--images">
+              <div
+                class="home-page header__box--images header__box--images--big-screen"
+              >
                 <img
                   srcset="
                     ./img/header-image-1-1x.png 1x,
@@ -109,7 +111,7 @@
                   "
                   src="./img/header-image-1-2x.png"
                   alt="Music group"
-                  class="header__image header__image--first"
+                  class="home-page header__image header__image--first"
                 />
                 <img
                   srcset="
@@ -118,7 +120,7 @@
                   "
                   src="./img/header-image-2-2x.png"
                   alt="Music group"
-                  class="header__image header__image--second"
+                  class="home-page header__image header__image--second"
                 />
                 <img
                   srcset="
@@ -127,11 +129,15 @@
                   "
                   src="./img/header-image-3-2x.jpg"
                   alt="Music group"
-                  class="header__image header__image--third"
+                  class="home-page header__image header__image--third"
                 />
               </div>
-              <div class="header__box--text">
-                <h2 class="heading-secondary margin-bottom-medium">
+              <div
+                class="home-page header__box--text header__box--text--big-screen"
+              >
+                <h2
+                  class="heading-secondary heading-secondary--big-screen margin-bottom-medium"
+                >
                   <span>More than 100+ musical groups</span>
                   <span>are ready to perform in your venue</span>
                 </h2>
@@ -339,11 +345,12 @@
             class="box favorits__box--pading border-bottom box--baseline-align"
           >
             <h2 class="heading-secondary">Favorite Artists</h2>
-            <button
+            <a
+              href="#"
               class="btn btn--inline text text--color-grey-2 margin-left-auto"
             >
               View All
-            </button>
+            </a>
           </div>
           <div class="box box--padding-top box--column box--gap-medium">
             <div class="group-box group-box--center-align">

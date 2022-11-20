@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" />
+
+    <title>Gigit</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation panel -->
+      <div class="navigation">
+        <nav class="navigation__nav">
+          <div class="navigation__icon-box">
+            <a href="#" class="navigation__btn navigation__btn--first">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#account"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#calendar"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn navigation__btn--active">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#music"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#star"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#chat"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#document"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="navigation__icon-box">
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#notification"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#user"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn navigation__btn--last">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#logout"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <main class="box">
+        <div class="main-content box box--column">
+          <!-- Header -->
+          <header class="details-page header">
+            <div
+              class="box box--vertical-align details-page header__box--padding border-bottom"
+            >
+              <a href="#" class="btn btn--color-grey details-page header__btn">
+                <svg class="icon">
+                  <use href="./img/svg/sprite.svg#star"></use>
+                </svg>
+              </a>
+              <h1 class="main-heading">Nirvana</h1>
+            </div>
+            <div
+              class="box box--padding-top details-page header__box--relative"
+            >
+              <img
+                srcset="
+                  ./img/details-header-image-1-1x.jpg 1x,
+                  ./img/details-header-image-1-2x.jpg 2x
+                "
+                src="./img/details-header-image-1-2x.jpg"
+                alt="Nirvana group"
+                class="header__image"
+              />
+              <img
+                srcset="
+                  ./img/details-header-image-2-1x.jpg 1x,
+                  ./img/details-header-image-2-2x.jpg 2x
+                "
+                src="./img/details-header-image-2-2x.jpg"
+                alt=""
+                class="header__image details-page header__image--second"
+              />
+            </div>
+          </header>
+
+          <div class="box">
+            <div class="box box--column">
+              <!-- About -->
+              <section class="section--large-padding-top about">
+                <h2 class="heading-secondary margin-bottom-medium">About</h2>
+                <p class="text margin-bottom-xxl">
+                  Nirvana is one of the best-selling bands of all time, having
+                  sold more than 75 million records worldwide. During their
+                  three years as a mainstream act, Nirvana received an American
+                  Music Award, Brit Award and Grammy Award, as well as seven MTV
+                  Video Music Awards and two NME Awards.
+                </p>
+                <div class="box box--vertical-align">
+                  <div class="box">
+                    <a href="#" class="btn btn--color-white btn--primary text"
+                      >Book a Gig</a
+                    >
+                  </div>
+                  <div class="box box--gap-icon-box box--justify-content-end">
+                    <a href="#" class="btn">
+                      <svg class="icon">
+                        <use href="./img/svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="btn">
+                      <svg class="icon">
+                        <use href="./img/svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="btn">
+                      <svg class="icon">
+                        <use href="./img/svg/sprite.svg#youtube"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="btn">
+                      <svg class="icon">
+                        <use href="./img/svg/sprite.svg#spotify"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="btn">
+                      <svg class="icon">
+                        <use href="./img/svg/sprite.svg#cloud-music"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Muso details -->
+              <section class="section details">
+                <h2 class="heading-secondary margin-bottom-xxl">
+                  Muso Details
+                </h2>
+                <div class="muso-details">
+                  <div class="box box--justify-content-space-beetwen">
+                    <p class="text text--font-medium-large">Contact Name</p>
+                    <p class="text">Kurt Cobain</p>
+                  </div>
+                  <div class="box box--justify-content-space-beetwen">
+                    <p class="text text--font-medium-large">
+                      Gig Price (per hour)
+                    </p>
+                    <p class="text">$50-150</p>
+                  </div>
+                  <div class="box box--justify-content-space-beetwen">
+                    <p class="text text--font-medium-large">ABN</p>
+                    <p class="text">34 190 894 963</p>
+                  </div>
+                  <div class="box box--justify-content-space-beetwen">
+                    <p class="text text--font-medium-large">Bank Details</p>
+                    <p class="text">40802840710000021339</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- Gallery -->
+            <div class="details-page gallery section--large-padding-top">
+              <h2 class="heading-secondary margin-bottom-medium">Gallery</h2>
+              <div
+                class="box box--vertical-align box--gap-small margin-bottom-medium"
+              >
+                <div class="gallery__image-box">
+                  <img
+                    srcset="./img/image-2-1x.jpg 1x, ./img/image-2-2x.jpg 2x"
+                    src="./img/image-2-2x.jpg"
+                    alt="Nirvana instagram"
+                    class="gallery__img"
+                  />
+                </div>
+                <p class="text text--font-size-large text--font-weight-large">
+                  nirvana_official
+                </p>
+                <svg class="icon">
+                  <use href="./img/svg/sprite.svg#done"></use>
+                </svg>
+              </div>
+              <div
+                class="grid grid--three-column grid--three-rows grid--ultra-small-gap"
+              >
+                <img
+                  srcset="
+                    ./img/details/image-1-1x.jpg 1x,
+                    ./img/details/image-1-2x.jpg 2x
+                  "
+                  src="./img/details/image-1-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-2-1x.jpg 1x,
+                    ./img/details/image-2-2x.jpg 2x
+                  "
+                  src="./img/details/image-2-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-3-1x.jpg 1x,
+                    ./img/details/image-3-2x.jpg 2x
+                  "
+                  src="./img/details/image-3-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-4-1x.jpg 1x,
+                    ./img/details/image-4-2x.jpg 2x
+                  "
+                  src="./img/details/image-4-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-5-1x.jpg 1x,
+                    ./img/details/image-5-2x.jpg 2x
+                  "
+                  src="./img/details/image-5-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-6-1x.jpg 1x,
+                    ./img/details/image-6-2x.jpg 2x
+                  "
+                  src="./img/details/image-6-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-7-1x.jpg 1x,
+                    ./img/details/image-7-2x.jpg 2x
+                  "
+                  src="./img/details/image-7-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-8-1x.jpg 1x,
+                    ./img/details/image-8-2x.jpg 2x
+                  "
+                  src="./img/details/image-8-2x.jpg"
+                  alt="Group photo"
+                />
+                <img
+                  srcset="
+                    ./img/details/image-9-1x.jpg 1x,
+                    ./img/details/image-9-2x.jpg 2x
+                  "
+                  src="./img/details/image-9-2x.jpg"
+                  alt="Group photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

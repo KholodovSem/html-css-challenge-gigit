@@ -2,8 +2,16 @@
   display: flex;
   width: 100%;
 
+  &--gap-small {
+    gap: $flex-gap-small;
+  }
+
   &--gap-medium {
     gap: $flex-gap-medium;
+  }
+
+  &--gap-icon-box {
+    gap: $grid-gap-icon-box;
   }
 
   &--column {
@@ -16,6 +24,14 @@
 
   &--vertical-align {
     align-items: center;
+  }
+
+  &--justify-content-end {
+    justify-content: flex-end;
+  }
+
+  &--justify-content-space-beetwen {
+    justify-content: space-between;
   }
 
   &--padding-top {

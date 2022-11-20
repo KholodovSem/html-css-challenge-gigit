@@ -1,6 +1,7 @@
 //COLORS:
 $color-main-black: #12141d;
 $color-main-green: #38f094;
+$color-main-coral: #ff715b;
 
 $color-grey-1: #dbdfe4;
 $color-grey-2: #697077;
@@ -12,8 +13,10 @@ $color-grey-dark: #3a3c45;
 //GRID
 $grid-gap-large: 5.8rem;
 $grid-gap-medium: 2rem;
+$grid-gap-icon-box: 3.4rem;
 
 //FLEX
+$flex-gap-small: 1rem;
 $flex-gap-medium: 2.4rem;
 
 //SIZE
@@ -24,3 +27,4 @@ $height-navigation-icon: 4rem;
 $section-padding-top: 5.6rem;
 
 //MEDIA QUERIES
+$media-big-screen: 100em; // 1600 / 16
