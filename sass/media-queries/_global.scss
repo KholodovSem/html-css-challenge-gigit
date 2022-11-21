@@ -1,0 +1,69 @@
+//*BIG SCREEN
+@media screen and (min-width: $media-big-screen) {
+  .heading-secondary {
+    &--big-screen {
+      font-size: 3.4rem !important;
+    }
+  }
+}
+
+//*TABLET
+@media screen and (max-width: $media-desktop) {
+  //!BASE
+  html {
+    font-size: 50% !important;
+  }
+
+  .container {
+    max-width: 96rem;
+  }
+}
+
+//*PHONE
+@media screen and (max-width: $media-tablet) {
+  //!BASE
+  .container {
+    position: relative;
+    max-width: 48.75rem;
+  }
+
+  .main-content {
+    padding: 0 0 0 0 !important;
+  }
+
+  main {
+    padding: 0 1rem 6.4rem 1rem !important;
+  }
+
+  //!NAVIGATION PANEL
+  .navigation {
+    bottom: 0 !important;
+    max-width: 48.75rem;
+    width: 100%;
+    height: auto !important;
+    flex-direction: row !important;
+    padding: 1.6rem 2rem !important;
+
+    &__nav {
+      flex-direction: row !important;
+      width: 100%;
+    }
+
+    &__btn {
+      display: none !important;
+
+      &--first {
+        display: flex !important;
+        margin-bottom: 0 !important;
+
+        &::after {
+          display: none !important;
+        }
+      }
+      &--menu {
+        display: flex !important;
+        margin: 0 !important;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .navigation {
   position: fixed;
+  z-index: 1001;
   flex: 0 0 6%;
   display: flex;
   flex-direction: column;
@@ -46,39 +47,43 @@
     &:not(:last-child) {
       margin-bottom: 2.4rem;
     }
-
-    &--first {
-      &:hover {
-        background-color: transparent;
-      }
-
-      position: relative;
-      margin-bottom: 4.8rem !important;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -2.4rem;
-        display: inline-block;
-        width: 100%;
-        height: 1px;
-        background-color: $color-grey-dark;
-      }
-    }
-
-    &--last {
-      position: relative;
-      margin-top: 4.8rem !important;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: -2.4rem;
-        display: inline-block;
-        width: 100%;
-        height: 1px;
-        background-color: $color-grey-dark;
-      }
-    }
   }
+}
+
+#navigation__btn--first {
+  &:hover {
+    background-color: transparent;
+  }
+
+  position: relative;
+  margin-bottom: 4.8rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2.4rem;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-grey-dark;
+  }
+}
+
+#navigation__btn--last {
+  position: relative;
+  margin-top: 4.8rem !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2.4rem;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-grey-dark;
+  }
+}
+
+#navigation__btn--menu {
+  display: none;
 }

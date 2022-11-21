@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" />
+
+    <title>Gigit</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation panel -->
+      <div class="navigation">
+        <nav class="navigation__nav">
+          <div class="navigation__icon-box">
+            <a
+              href="./index.html"
+              class="navigation__btn navigation__btn--first"
+              id="navigation__btn--first"
+            >
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#account"></use>
+              </svg>
+            </a>
+            <a href="./calendar.html" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#calendar"></use>
+              </svg>
+            </a>
+            <a href="./details.html" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#music"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#star"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#chat"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#document"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="navigation__icon-box">
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#notification"></use>
+              </svg>
+            </a>
+            <a href="#" class="navigation__btn">
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#user"></use>
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="navigation__btn navigation__btn--last"
+              id="navigation__btn--last"
+            >
+              <svg class="icon">
+                <use href="./img/svg/sprite.svg#logout"></use>
+              </svg>
+            </a>
+          </div>
+          <a
+            href="#"
+            class="navigation__btn navigation__btn--menu"
+            id="navigation__btn--menu"
+          >
+            <svg class="icon">
+              <use href="./img/svg/sprite.svg#menu"></use>
+            </svg>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Calendar -->
+      <main class="box box--column">
+        <!-- Header -->
+        <div class="main-content">
+          <header class="header">
+            <div
+              class="box box--justify-content-space-beetwen box--vertical-align"
+            >
+              <h1 class="main-heading">Calendar</h1>
+              <p class="date-picker text text--font-weight-medium">
+                <svg class="icon date-picker__icon date-picker__icon--right">
+                  <use href="./img/svg/sprite.svg#right-arrow"></use>
+                </svg>
+                June, 2022
+                <svg class="icon date-picker__icon date-picker__icon--left">
+                  <use href="./img/svg/sprite.svg#left-arrow"></use>
+                </svg>
+              </p>
+            </div>
+          </header>
+          <div class="calendar grid grid--seven-column">
+            <div class="calendar__month">
+              <p class="calendar__month-text">MON</p>
+            </div>
+            <div class="calendar__month">
+              <p class="calendar__month-text">TUE</p>
+            </div>
+            <div class="calendar__month">
+              <p class="calendar__month-text">WED</p>
+            </div>
+            <div class="calendar__month">
+              <p class="calendar__month-text">THU</p>
+            </div>
+            <div class="calendar__month">
+              <p class="calendar__month-text">FRI</p>
+            </div>
+            <div class="calendar__month">
+              <p class="calendar__month-text">SAT</p>
+            </div>
+            <div class="calendar__month">
+              <p class="calendar__month-text">SUN</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day calendar__day--previous-month">30</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day calendar__day--previous-month">31</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">1</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">2</p>
+              <div class="box box--column">
+                <p class="calendar__title">Available</p>
+                <p class="calendar__date">8:00 pm - 11:00 pm</p>
+              </div>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">3</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">4</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">5</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">6</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">7</p>
+              <div class="box box--column">
+                <p class="calendar__title">Available</p>
+                <p class="calendar__date">8:00 pm - 11:00 pm</p>
+              </div>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">8</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">9</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">10</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">11</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">12</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">13</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">14</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">15</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">16</p>
+              <div class="box box--column">
+                <p class="calendar__title">Available</p>
+                <p class="calendar__date">8:00 pm - 11:00 pm</p>
+              </div>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">17</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">18</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">19</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">20</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">21</p>
+              <div class="box box--column">
+                <p class="calendar__title">Available</p>
+                <p class="calendar__date">8:00 pm - 11:00 pm</p>
+              </div>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">22</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">23</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">24</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">25</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">26</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">27</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">28</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">29</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day">30</p>
+              <div class="box box--column">
+                <p class="calendar__title">Available</p>
+                <p class="calendar__date">8:00 pm - 11:00 pm</p>
+              </div>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day calendar__day--previous-month">1</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day calendar__day--previous-month">2</p>
+            </div>
+            <div class="calendar__cell">
+              <p class="calendar__day calendar__day--previous-month">3</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

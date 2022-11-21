@@ -7,6 +7,7 @@ $color-grey-1: #dbdfe4;
 $color-grey-2: #697077;
 $color-grey-3: #8b929a;
 $color-grey-light-1: #d4dae1;
+$color-grey-light-2: #eff0f2;
 $color-grey-light-3: #f7f8f9;
 $color-grey-dark: #3a3c45;
 
@@ -28,3 +29,6 @@ $section-padding-top: 5.6rem;
 
 //MEDIA QUERIES
 $media-big-screen: 100em; // 1600 / 16
+$media-desktop: 90em; // 1440 / 16
+$media-tablet: 48em; //768 / 16
+$media-phone: 24.375em; //390 / 16

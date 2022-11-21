@@ -19,17 +19,21 @@
       <div class="navigation">
         <nav class="navigation__nav">
           <div class="navigation__icon-box">
-            <a href="#" class="navigation__btn navigation__btn--first">
+            <a
+              href="/index.html"
+              class="navigation__btn navigation__btn--first"
+              id="navigation__btn--first"
+            >
               <svg class="icon">
                 <use href="./img/svg/sprite.svg#account"></use>
               </svg>
             </a>
-            <a href="#" class="navigation__btn">
+            <a href="./calendar.html" class="navigation__btn">
               <svg class="icon">
                 <use href="./img/svg/sprite.svg#calendar"></use>
               </svg>
             </a>
-            <a href="#" class="navigation__btn navigation__btn--active">
+            <a href="./details.html" class="navigation__btn">
               <svg class="icon">
                 <use href="./img/svg/sprite.svg#music"></use>
               </svg>
@@ -61,22 +65,35 @@
                 <use href="./img/svg/sprite.svg#user"></use>
               </svg>
             </a>
-            <a href="#" class="navigation__btn navigation__btn--last">
+            <a
+              href="#"
+              class="navigation__btn navigation__btn--last"
+              id="navigation__btn--last"
+            >
               <svg class="icon">
                 <use href="./img/svg/sprite.svg#logout"></use>
               </svg>
             </a>
           </div>
+          <a
+            href="#"
+            class="navigation__btn navigation__btn--menu"
+            id="navigation__btn--menu"
+          >
+            <svg class="icon">
+              <use href="./img/svg/sprite.svg#menu"></use>
+            </svg>
+          </a>
         </nav>
       </div>
-      <main class="box">
+      <main class="home-page box">
         <div class="main-content home-page__main-content box box--column">
           <!-- Header -->
           <header class="home-page header">
             <div
               class="box home-page header__box--padding box--vertical-align border-bottom"
             >
-              <h1 class="main-heading">Browse</h1>
+              <h1 class="home-page main-heading">Browse</h1>
               <form class="search_panel margin-left-auto">
                 <label class="search_panel__label">
                   <svg class="search_panel__icon">

@@ -1,0 +1,24 @@
+.date-picker {
+  position: relative;
+  padding: 1rem 6rem;
+  border: 1px solid $color-grey-light-1;
+  border-radius: 6px;
+
+  &__icon {
+    &--right,
+    &--left {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      cursor: pointer;
+    }
+
+    &--right {
+      right: 1.7rem;
+    }
+
+    &--left {
+      left: 1.7rem;
+    }
+  }
+}

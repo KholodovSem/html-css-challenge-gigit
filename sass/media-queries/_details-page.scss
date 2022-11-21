@@ -1,0 +1,48 @@
+//*TABLET
+@media screen and (max-width: $media-desktop) {
+  //!BOX
+  .details.box {
+    flex-direction: column;
+  }
+
+  //!HEADER
+  .details-page.header__image--second {
+    max-width: 10rem;
+  }
+
+  //!MUSO DETAILS
+  .muso-details {
+    max-width: 100%;
+  }
+
+  //!GALLERY
+  .details-page.gallery {
+    padding-top: 5.6rem !important;
+    margin: 0;
+
+    .grid {
+      width: min-content;
+      gap: 2.2rem;
+    }
+  }
+}
+
+//*PHONE
+@media screen and (max-width: $media-tablet) {
+  //! ABOUT
+  .about {
+    .btn--primary {
+      padding: 2.3rem 7.3rem;
+    }
+  }
+
+  //! GALLERY
+  .details-page.gallery {
+    padding-bottom: 2rem;
+
+    .grid {
+      width: min-content;
+      gap: 1rem;
+    }
+  }
+}

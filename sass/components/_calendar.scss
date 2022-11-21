@@ -1,0 +1,88 @@
+.calendar {
+  grid-template-rows: auto repeat(5, 1fr);
+  height: 100%;
+  padding: 2.4rem 0 2.4rem 0;
+  gap: 8px;
+
+  &__month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 0;
+    border-radius: 8px;
+    background-color: $color-grey-light-2;
+  }
+
+  &__month-text {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  &__cell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.6rem;
+    border: 1px solid $color-grey-light-1;
+    border-radius: 6px;
+    transition: all 200ms;
+
+    &::after {
+      position: absolute;
+      right: 1.6rem;
+      bottom: 1.6rem;
+      content: "";
+      width: 1.8rem;
+      height: 2rem;
+      background-image: url(./img/svg/add-todo.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 200ms;
+    }
+
+    &:hover {
+      background-color: $color-grey-light-1;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 1.6rem;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__day {
+    align-self: flex-start;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    &--previous-month {
+      color: $color-grey-3;
+    }
+  }
+
+  &__title,
+  &__day {
+    color: $color-grey-2;
+    font-size: 1.3rem;
+    line-height: 1.38;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__day {
+    font-weight: 500;
+  }
+}
