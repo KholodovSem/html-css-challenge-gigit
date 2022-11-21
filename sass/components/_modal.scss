@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba($color-modal-background, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__header {
+    margin-bottom: 3.6rem;
+
+    .box {
+      .main-heading {
+        margin-bottom: 1.6rem;
+      }
+      .text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 3.2rem;
+    right: 3.2rem;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 56rem;
+    width: 100%;
+    padding: 3.6rem 8rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2rem 4rem rgba(#000, 0.2);
+  }
+
+  &__step-box {
+    gap: 1.2rem;
+    margin-bottom: 3.6rem;
+  }
+
+  &__step {
+    position: relative;
+    z-index: 2;
+    padding: 1.3rem;
+    border-radius: 50%;
+    background-color: $color-grey-light-2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__step-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  &__dynamic-part {
+    margin-bottom: 5.6rem;
+  }
+
+  //!FORM
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.3rem 1.6rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 1px solid $color-grey-light-1;
+    border-radius: 6px;
+
+    &::placeholder {
+      font-family: inherit;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: $color-grey-3;
+    }
+  }
+
+  &__buttons-box {
+    gap: 3.2rem;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 1.3rem 0;
+    color: $color-main-coral;
+
+    &.btn.btn--primary {
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

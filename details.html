@@ -89,7 +89,7 @@
       <main class="box">
         <div class="main-content box box--column">
           <!-- Header -->
-          <header class="details-page header">
+          <header class="details-page header" id="page-start">
             <div
               class="box box--vertical-align details-page header__box--padding border-bottom"
             >
@@ -138,7 +138,9 @@
                 </p>
                 <div class="box box--vertical-align">
                   <div class="box">
-                    <a href="#" class="btn btn--color-white btn--primary text"
+                    <a
+                      href="#modal"
+                      class="btn btn--color-white btn--primary text"
                       >Book a Gig</a
                     >
                   </div>
@@ -301,6 +303,82 @@
           </div>
         </div>
       </main>
+
+      <!-- Modal -->
+      <div class="modal" id="modal">
+        <div class="modal__content">
+          <a href="#page-start" class="btn">
+            <svg class="modal__icon icon">
+              <use href="./img/svg/sprite.svg#close"></use>
+            </svg>
+          </a>
+          <header class="modal__header">
+            <div class="box box--column">
+              <h1 class="main-heading">
+                <span>Tell us more about</span>
+                <span>your Venue</span>
+              </h1>
+              <p class="text text--font-weight-medium text--color-grey-3">
+                To access all of the site's features and allow
+              </p>
+              <p class="text text--font-weight-medium text--color-grey-3">
+                music groups to learn more about you
+              </p>
+            </div>
+          </header>
+
+          <div class="modal__dynamic-part">
+            <div class="modal__step-box box box--baseline-align">
+              <p class="modal__step">1/4</p>
+              <p class="modal__step-text">Venue Details</p>
+            </div>
+            <form class="modal__form">
+              <label class="modal__label">
+                <p class="text text--font-weight-medium">Name of your Venue</p>
+                <input
+                  type="text"
+                  class="modal__input"
+                  placeholder="Venue name"
+                />
+              </label>
+              <label class="modal__label">
+                <p class="text text--font-weight-medium">Venue Email</p>
+                <input
+                  type="email"
+                  class="modal__input"
+                  placeholder="mail@sitename.com"
+                />
+              </label>
+              <label class="modal__label">
+                <p class="text text--font-weight-medium">Venue Phone</p>
+                <input
+                  type="number"
+                  class="modal__input"
+                  placeholder="+61 111 111 111"
+                />
+              </label>
+              <label class="modal__label">
+                <p class="text text--font-weight-medium">Venue Website</p>
+                <input
+                  type="text"
+                  class="modal__input"
+                  placeholder="sitename.com"
+                />
+              </label>
+            </form>
+          </div>
+          <div class="modal__buttons-box box">
+            <a
+              href="#"
+              class="modal__button btn btn--primary text text--font-weight-medium"
+              >Continue</a
+            >
+            <a href="#" class="modal__button btn text text--font-weight-medium"
+              >Back Home</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
