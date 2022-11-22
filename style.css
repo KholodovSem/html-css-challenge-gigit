@@ -964,10 +964,10 @@ img {
     margin-bottom: 36px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
   .modal__content {
-    height: 100%;
-    border-radius: 0;
+    height: auto;
+    border-radius: 16px;
     max-width: 420px;
     padding: 16px 40px;
     overflow-y: auto;
@@ -993,6 +993,12 @@ img {
   }
   .modal__dynamic-part {
     margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal__content {
+    height: 100%;
+    border-radius: 0;
   }
 }
 

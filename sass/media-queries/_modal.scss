@@ -17,11 +17,11 @@
 }
 
 //*MOBILE
-@media screen and (max-width: $media-tablet) {
+@media screen and (max-width: $media-desktop) {
   .modal {
     &__content {
-      height: 100%;
-      border-radius: 0;
+      height: auto;
+      border-radius: 16px;
       max-width: 420px;
       padding: 16px 40px;
       overflow-y: auto;
@@ -56,6 +56,14 @@
 
     &__dynamic-part {
       margin-bottom: 36px;
+    }
+  }
+}
+@media screen and (max-width: $media-tablet) {
+  .modal {
+    &__content {
+      height: 100%;
+      border-radius: 0;
     }
   }
 }
