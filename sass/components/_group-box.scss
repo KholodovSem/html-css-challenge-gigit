@@ -11,13 +11,13 @@
 
   &__image {
     &--small-box {
-      max-width: 4rem;
+      max-width: 40px;
       width: 100%;
       border-radius: 50%;
     }
 
     &--medium-box {
-      max-width: 6rem;
+      max-width: 60px;
       width: 100%;
       border-radius: 50%;
     }
@@ -28,11 +28,11 @@
     }
 
     &--margin-bottom {
-      margin-bottom: 1.2rem;
+      margin-bottom: 12px;
     }
 
     &--margin-right {
-      margin-right: 1.6rem;
+      margin-right: 16px;
     }
 
     &--grey-background {

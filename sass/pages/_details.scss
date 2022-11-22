@@ -4,24 +4,31 @@
   }
 
   &__box--padding {
-    padding-bottom: 2.8rem;
+    padding-bottom: 28px;
   }
 
   &__btn {
-    margin-right: 1.4rem;
+    margin-right: 14px;
   }
 
   &__image {
     &--second {
       position: absolute;
-      bottom: -3rem;
-      left: 5rem;
+      bottom: -30px;
+      left: 50px;
 
-      max-width: 16rem;
+      max-width: 160px;
     }
   }
 }
 
+.details.box {
+  padding-top: 86px;
+  & > .box {
+    padding-right: 80px;
+    justify-content: space-between;
+  }
+}
+
 .details-page.gallery {
-  margin-left: 8rem;
 }

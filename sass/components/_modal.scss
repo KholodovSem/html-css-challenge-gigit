@@ -16,22 +16,22 @@
   }
 
   &__header {
-    margin-bottom: 3.6rem;
+    margin-bottom: 36px;
 
     .box {
       .main-heading {
-        margin-bottom: 1.6rem;
+        margin-bottom: 16px;
       }
       .text {
-        font-size: 1.5rem;
+        font-size: 15px;
       }
     }
   }
 
   &__icon {
     position: absolute;
-    top: 3.2rem;
-    right: 3.2rem;
+    top: 32px;
+    right: 32px;
     cursor: pointer;
   }
 
@@ -40,58 +40,58 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    max-width: 56rem;
+    max-width: 560px;
     width: 100%;
     padding: 3.6rem 8rem;
     background-color: #fff;
     border-radius: 16px;
-    box-shadow: 0 2rem 4rem rgba(#000, 0.2);
+    box-shadow: 0 20px 40px rgba(#000, 0.2);
   }
 
   &__step-box {
-    gap: 1.2rem;
-    margin-bottom: 3.6rem;
+    gap: 12px;
+    margin-bottom: 36px;
   }
 
   &__step {
     position: relative;
     z-index: 2;
-    padding: 1.3rem;
+    padding: 13px;
     border-radius: 50%;
     background-color: $color-grey-light-2;
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.5;
   }
 
   &__step-text {
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.5;
   }
 
   &__dynamic-part {
-    margin-bottom: 5.6rem;
+    margin-bottom: 56px;
   }
 
   //!FORM
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 32px;
   }
 
   &__label {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 12px;
   }
 
   &__input {
     width: 100%;
-    padding: 1.3rem 1.6rem;
+    padding: 13px 16px;
     font-family: inherit;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.5;
     border: 1px solid $color-grey-light-1;
@@ -99,7 +99,7 @@
 
     &::placeholder {
       font-family: inherit;
-      font-size: 1.5rem;
+      font-size: 15px;
       font-weight: 500;
       line-height: 1.5;
       color: $color-grey-3;
@@ -107,12 +107,12 @@
   }
 
   &__buttons-box {
-    gap: 3.2rem;
+    gap: 32px;
   }
 
   &__button {
     width: 100%;
-    padding: 1.3rem 0;
+    padding: 13px 0;
     color: $color-main-coral;
 
     &.btn.btn--primary {

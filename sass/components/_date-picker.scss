@@ -1,6 +1,6 @@
 .date-picker {
   position: relative;
-  padding: 1rem 6rem;
+  padding: 10px 60px;
   border: 1px solid $color-grey-light-1;
   border-radius: 6px;
 
@@ -14,11 +14,11 @@
     }
 
     &--right {
-      right: 1.7rem;
+      right: 17px;
     }
 
     &--left {
-      left: 1.7rem;
+      left: 17px;
     }
   }
 }

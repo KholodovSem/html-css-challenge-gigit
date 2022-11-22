@@ -3,46 +3,73 @@
   //!BOX
   .details.box {
     flex-direction: column;
+    & > .box {
+      padding-right: 0px;
+      justify-content: space-between;
+    }
   }
 
   //!HEADER
   .details-page.header__image--second {
-    max-width: 10rem;
+    max-width: 100px;
   }
 
   //!MUSO DETAILS
+  .details {
+    padding-top: 56px;
+  }
+
   .muso-details {
     max-width: 100%;
   }
 
   //!GALLERY
   .details-page.gallery {
-    padding-top: 5.6rem !important;
+    padding-top: 56px !important;
     margin: 0;
 
     .grid {
-      width: min-content;
-      gap: 2.2rem;
+      gap: 22px;
     }
   }
 }
 
 //*PHONE
 @media screen and (max-width: $media-tablet) {
+  //!HEADER
+  .details-page.header__image--second {
+    max-width: 70px;
+    left: 20px;
+  }
+
   //! ABOUT
-  .about {
-    .btn--primary {
-      padding: 2.3rem 7.3rem;
+  .about > {
+    .box {
+      flex-direction: column;
+      gap: 20px;
+
+      .btn--primary {
+        min-width: 100%;
+        padding: 15px 73px;
+        text-align: center;
+      }
+
+      .box:last-child {
+        justify-content: space-between;
+      }
+    }
+
+    .text {
+      font-size: 12px;
     }
   }
 
   //! GALLERY
   .details-page.gallery {
-    padding-bottom: 2rem;
+    padding-bottom: 20px;
 
     .grid {
-      width: min-content;
-      gap: 1rem;
+      gap: 5px;
     }
   }
 }

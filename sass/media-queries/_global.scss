@@ -2,7 +2,7 @@
 @media screen and (min-width: $media-big-screen) {
   .heading-secondary {
     &--big-screen {
-      font-size: 3.4rem !important;
+      font-size: 34px !important;
     }
   }
 }
@@ -13,10 +13,6 @@
   html {
     font-size: 50% !important;
   }
-
-  .container {
-    max-width: 96rem;
-  }
 }
 
 //*PHONE
@@ -24,7 +20,7 @@
   //!BASE
   .container {
     position: relative;
-    max-width: 48.75rem;
+    max-width: 420px;
   }
 
   .main-content {
@@ -32,17 +28,17 @@
   }
 
   main {
-    padding: 0 1rem 6.4rem 1rem !important;
+    padding: 0 10px 64px 10px !important;
   }
 
   //!NAVIGATION PANEL
   .navigation {
     bottom: 0 !important;
-    max-width: 48.75rem;
+    max-width: 420px;
     width: 100%;
     height: auto !important;
     flex-direction: row !important;
-    padding: 1.6rem 2rem !important;
+    padding: 16px 20px !important;
 
     &__nav {
       flex-direction: row !important;

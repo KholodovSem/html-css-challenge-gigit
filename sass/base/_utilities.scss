@@ -6,16 +6,16 @@
 }
 
 .margin-bottom-small {
-  margin-bottom: 0.4rem;
+  margin-bottom: 4px;
 }
 .margin-bottom-medium {
-  margin-bottom: 1.6rem !important;
+  margin-bottom: 16px !important;
 }
 .margin-bottom-large {
-  margin-bottom: 2.4rem;
+  margin-bottom: 24px;
 }
 .margin-bottom-xxl {
-  margin-bottom: 2.8rem;
+  margin-bottom: 28px;
 }
 
 .margin-right-auto {
@@ -30,7 +30,7 @@
   padding-top: $section-padding-top;
 
   &--large-padding-top {
-    padding-top: 8.6rem;
+    padding-top: 86px;
   }
 }
 

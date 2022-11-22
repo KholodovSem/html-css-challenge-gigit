@@ -21,11 +21,49 @@
 
 //*TABLET
 @media screen and (max-width: $media-desktop) {
+  .home-page__main-content {
+    padding: 0 10px 44px 10px;
+    min-height: auto;
+  }
+
   .home-page.box {
     flex-direction: column;
   }
 
   //!HEADER
+  .home-page.header {
+    .home-page.header__box--images {
+      margin-right: 20px;
+
+      @media screen and (max-width: 1000px) {
+        margin-right: 0;
+      }
+
+      .header__image--first {
+        max-width: 30%;
+        min-width: 76px;
+      }
+
+      .header__image--second {
+        max-width: 35%;
+      }
+
+      .header__image--third {
+        max-width: 60%;
+      }
+    }
+
+    .home-page.header__box--text {
+      .heading-secondary {
+        font-size: 32px;
+
+        @media screen and (max-width: 1050px) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
   .home-page.main-heading {
     display: none;
   }
@@ -45,7 +83,7 @@
   //!FAVORITS
   .favorits {
     flex: auto !important;
-    padding: 4rem 4.4rem !important;
+    padding: 40px 44px !important;
 
     .box {
       flex-direction: row;
@@ -69,13 +107,33 @@
 @media screen and (max-width: $media-tablet) {
   //!HEADER
   .header .home-page.box {
-    padding: 0 0 2rem 0 !important;
+    padding: 0 0 20px 0 !important;
+  }
+
+  .home-page.header__box--images {
+    justify-content: center;
   }
 
   .home-page.header .box:nth-child(2) {
     flex-direction: column !important;
     text-align: center;
-    gap: 2rem;
+    gap: 20px;
+  }
+
+  .search_panel__input {
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+
+  .home-page.header__box--text {
+    .heading-secondary {
+      font-size: 18px !important;
+    }
+
+    .text {
+      font-size: 10px !important;
+    }
   }
 
   //! NEW ARTIST
@@ -84,26 +142,30 @@
 
     .grid {
       grid-template-columns: repeat(3, 1fr) !important;
-      row-gap: 1rem;
+      row-gap: 10px;
     }
   }
 
   //! POPULAR
   .popular {
     text-align: center;
+
+    .grid {
+      gap: 5px;
+    }
   }
 
   //! FAVORITS
   .favorits {
     & > .box:nth-child(2) {
       display: grid !important;
-      grid-template-columns: repeat(3, 1fr) !important;
+      grid-template-columns: repeat(2, 1fr) !important;
     }
   }
 
   //! Favorits
   .favorits {
-    padding: 5.6rem 0 2rem 0 !important;
+    padding: 56px 0 20px 0 !important;
     background-color: #fff !important;
   }
 }

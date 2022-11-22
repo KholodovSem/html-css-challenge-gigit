@@ -14,23 +14,23 @@ $color-grey-dark: #3a3c45;
 $color-modal-background: #12141d;
 
 //GRID
-$grid-gap-large: 5.8rem;
-$grid-gap-medium: 2rem;
-$grid-gap-icon-box: 3.4rem;
+$grid-gap-large: 58px;
+$grid-gap-medium: 20px;
+$grid-gap-icon-box: 34px;
 
 //FLEX
-$flex-gap-small: 1rem;
-$flex-gap-medium: 2.4rem;
+$flex-gap-small: 10px;
+$flex-gap-medium: 24px;
 
 //SIZE
-$width-navigation-icon: 4rem;
-$height-navigation-icon: 4rem;
+$width-navigation-icon: 40px;
+$height-navigation-icon: 40px;
 
 //PADDING
-$section-padding-top: 5.6rem;
+$section-padding-top: 56px;
 
 //MEDIA QUERIES
-$media-big-screen: 100em; // 1600 / 16
-$media-desktop: 90em; // 1440 / 16
-$media-tablet: 48em; //768 / 16
-$media-phone: 24.375em; //390 / 16
+$media-big-screen: 1600px; // 1600 / 16
+$media-desktop: 1440px; // 1440 / 16
+$media-tablet: 768px; //768 / 16
+$media-phone: 390px; //390 / 16

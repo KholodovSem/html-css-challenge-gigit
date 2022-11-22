@@ -2,8 +2,8 @@
 @media screen and (max-width: $media-desktop) {
   .modal {
     &__content {
-      max-width: 46rem;
-      padding: 1.6rem 4rem;
+      max-width: 460px;
+      padding: 16px 40px;
     }
 
     &__header {
@@ -11,7 +11,51 @@
     }
 
     &__dynamic-part {
-      margin-bottom: 3.6rem;
+      margin-bottom: 36px;
+    }
+  }
+}
+
+//*MOBILE
+@media screen and (max-width: $media-tablet) {
+  .modal {
+    &__content {
+      height: 100%;
+      border-radius: 0;
+      max-width: 420px;
+      padding: 16px 40px;
+      overflow-y: auto;
+    }
+
+    &__header {
+      text-align: center;
+      font-size: 25px;
+
+      .main-heading {
+        font-size: 22px;
+      }
+
+      .text {
+        font-size: 13px !important;
+      }
+    }
+
+    &__form {
+      gap: 14px;
+    }
+
+    &__label {
+      .text {
+        font-size: 12px;
+      }
+    }
+
+    &__input {
+      padding: 8px 16px;
+    }
+
+    &__dynamic-part {
+      margin-bottom: 36px;
     }
   }
 }
